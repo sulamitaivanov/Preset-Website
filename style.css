@@ -17,7 +17,6 @@ img{
 	max-width:40%;
 }
 
-
 h1{
 	font-size: 2.5em;
 	margin-top: 1em;
@@ -36,22 +35,24 @@ h4{
 
 a{
 	text-decoration: none;
-	color: #69665E;
+	color: #918E7C;
+}
+
+.menu{
+	color: #787567;
+	text-shadow: 2px 2px white;
 }
 
 .nav{
-	margin: 2em 0;
+	padding: .5em;
 }
 
 .nav-list{
 	display: flex;
 	flex-flow: row;
 	grid-gap: 1em;
-	font-size: 1em;
-}
-
-.nav__item{
-	color: white;
+	font-size: 1.5em;
+	font-weight: 300;
 }
 
 .showcase{
@@ -96,7 +97,7 @@ a{
 	font-size: 9em;
 }
 
-.theme-wrapper{
+.themes-wrapper{
 	margin: 2em 15em 3em 15em;
 }
 
@@ -125,7 +126,7 @@ a:hover{
 
 .filter-wrapper{
 	text-align: center;
-	margin-top: 3em;
+	margin: 3em 0;
 }
 
 @media (max-width: 900px){
@@ -133,17 +134,28 @@ a:hover{
 	.showcase{
 		padding: 0;
 	}
+
+	.menu{
+	color: white;
+	text-shadow: none;
+}
 	.text{
 		margin: 0 auto;
 		text-align: center;
 		font-size: .5em;
 	}
 
-	.theme-wrapper{
+	.themes-wrapper{
 		margin: 0;
+	}
+
+	.theme-title{
+		text-align: center;
 	}
 
 	.packages-wrapper{
 		flex-flow: column;
 	}
+
+
 }

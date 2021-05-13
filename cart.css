@@ -27,69 +27,49 @@ header{
 	grid-gap: 1em;
 }
 
+.cart-container{
+	display: flex;
+	padding:0 100px
+}
 
-.pack-container{
+.cart-wrapper{
 	margin:0 auto;
 	width: 70%;
-	display: flex;
-	grid-gap: 2em;
 	padding-top: 2em;
 }
 
-.featured{
-	max-width: 40%;
-}
-
-.pack-info{
+.cart-contents{
 	display: flex;
-	flex-flow: column;
-	margin-top: 1em;
+	grid-gap: 2em;
+	align-items: center;
+	padding-bottom: 2em;
 }
 
-.preset-details{
-	flex-flow: column;
-	font-weight: 600;
-	margin: 2em 0;
-}
-
-.disclaimer p{
-	max-width: 70%;
-}
-
-.img-carousel{
-	padding-top: 12em;
-	flex-flow: column;
-	width: 50%;
-	margin: 0 auto;
+.featured{
+	max-width: 20%;
 }
 
 button{
 	margin-bottom: 1em;
-	padding: 1em 0;
-	width: 20%;
+	padding: .5em 1em;
 	border-radius:20px;
 	border: none;
 	background-color:#EDA56A;
 }
 
-.device{ 
-	color: white; 
-}
-.devices-container{
-	padding: 0;
-	margin-top: 2em;
-	
-}
-
-.b_a {
-	max-width: 100%;
+.check-out-btn{
+	color: white;
+	font-size: 1.2em;
 }
 
 @media (max-width: 1150px){
 
 	*{
 		margin:0 auto;
-		width: 95%;
+	}
+
+	header{
+		padding: 2em 0;
 	}
 
 	.nav-list{
@@ -98,20 +78,33 @@ button{
 	}
 
 	.featured{
-		max-width: 90%;
+		max-width: 100%;
 	}
 
-	.pack-container{
+	.cart-container{
 		flex-flow: column;
+		padding: 0 2em;
 	}
 
-	.img-carousel{
-		width: 90%;
+	.cart-wrapper{
+		margin:0;
+		width: 100%;
+	}
+
+	.cart-contents{
+		flex-flow: column;
+		grid-gap: 0;
+	}
+
+	.subtotal{
+		margin: 0;
+		padding:0;
+		text-align: center;
 	}
 
 
 	button{
-		width: 90%;
+		margin-top: 1em;
 	}
 
 }

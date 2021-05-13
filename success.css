@@ -1,0 +1,68 @@
+body{
+	color: #69665E;
+	font-family: 'Lato', sans-serif;
+	letter-spacing: 1px;
+}
+
+a{
+	text-decoration: none;
+	color: #69665E;
+}
+
+header{
+	padding: 40px 290px;
+}
+
+.nav{
+	width: 20%;
+	padding-top: 2em;
+}
+
+.nav-list{
+	display: flex;
+	font-size: 1em;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	grid-gap: 1em;
+}
+
+.success-wrapper{
+	margin: 0 auto;
+	width: 70%;
+}
+
+.instructions-link{
+	color: #EDA56A;
+}
+
+button{
+	margin-bottom: 1em;
+	padding: .5em 1em;
+	border-radius:20px;
+	border: none;
+	background-color:#EDA56A;
+	color: white;
+}
+
+@media (max-width: 1150px){
+
+	*{
+		margin:0 auto;
+	}
+
+	header{
+		padding: 2em 0;
+	}
+
+	.nav-list{
+		grid-gap: 1em;
+		justify-content: center;
+	}
+
+
+	button{
+		margin-top: 1em;
+	}
+
+}
